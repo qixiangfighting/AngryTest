@@ -9,6 +9,9 @@ public class GameManger : MonoBehaviour
     public List<pig> pig;
 
     public static GameManger _instance;
+
+    public GameObject win;
+    public GameObject lose;
     private Vector3 orignalPos;
     private void Awake()
     {
@@ -56,6 +59,7 @@ public class GameManger : MonoBehaviour
             else
             {
                 //fail
+                lose.SetActive(true);
             }
             
 
@@ -63,6 +67,14 @@ public class GameManger : MonoBehaviour
         else
         {
             // win
+            win.SetActive(true);
         }
     }
+
+   public void showStarter()
+   {
+
+
+   }
+
 }
