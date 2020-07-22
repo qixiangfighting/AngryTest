@@ -19,6 +19,8 @@ public class bird : MonoBehaviour
 
     public GameObject boom;
     private TestMyTrial myTrial;
+
+    private bool canMove = true;
     private void Awake()
     {
 
@@ -30,23 +32,29 @@ public class bird : MonoBehaviour
     // 鼠标按下
     private void OnMouseDown()
     {
-        isClick = true;
-        rg.isKinematic = true;
-
-
+        if (canMove)
+        {
+            isClick = true;
+            rg.isKinematic = true;
+        }
     }
     // 鼠标抬起
     private void OnMouseUp()
     {
-        isClick = false;
-        rg.isKinematic = false;
+        if (canMove)
+        {
+            isClick = false;
+            rg.isKinematic = false;
 
-        StartCoroutine(Fly());
-        //Invoke("Fly2", 0.1f);
-        
-        //禁用划线
-        left.enabled = false;
-        right.enabled = false;
+            StartCoroutine(Fly());
+            //Invoke("Fly2", 0.1f);
+
+            //禁用划线
+            left.enabled = false;
+            right.enabled = false;
+
+            canMove = false;
+        }
     }
 
     private void Update()
