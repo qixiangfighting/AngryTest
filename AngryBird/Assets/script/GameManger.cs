@@ -13,6 +13,7 @@ public class GameManger : MonoBehaviour
     public GameObject win;
     public GameObject lose;
     private Vector3 orignalPos;
+    public GameObject[] starts;
     private void Awake()
     {
         _instance = this;
@@ -73,8 +74,17 @@ public class GameManger : MonoBehaviour
 
    public void showStarter()
    {
-
-
+       StartCoroutine("show");
    }
+
+   IEnumerator show()
+   {
+       for (int i = 0; i < birds.Count+1; i++)
+       {
+           yield return new WaitForSeconds(0.2f);
+           starts[i].SetActive(true);
+       }
+   }
+   
 
 }
