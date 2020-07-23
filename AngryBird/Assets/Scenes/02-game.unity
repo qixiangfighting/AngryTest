@@ -993,6 +993,21 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1581748032244877801, guid: b476965ee14574a46b7dbcdd226a603e,
+        type: 3}
+      propertyPath: dead
+      value: 
+      objectReference: {fileID: 8300000, guid: f7872a240c3a867458646a6a01dde6a2, type: 3}
+    - target: {fileID: 1581748032244877801, guid: b476965ee14574a46b7dbcdd226a603e,
+        type: 3}
+      propertyPath: hurtClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 53dea70923c95cb45864ff65eeb38785, type: 3}
+    - target: {fileID: 1581748032244877801, guid: b476965ee14574a46b7dbcdd226a603e,
+        type: 3}
+      propertyPath: birdCollision
+      value: 
+      objectReference: {fileID: 8300000, guid: 32b5cb2ec3029484eb0a71e43bd697e0, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b476965ee14574a46b7dbcdd226a603e, type: 3}
 --- !u!1 &302727268
@@ -1202,12 +1217,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDis: 1.5
+  smooth: 3
   sp: {fileID: 0}
   right: {fileID: 66586256}
   rightPos: {fileID: 42714152}
   left: {fileID: 1905543341}
   leftPos: {fileID: 1241128051}
   boom: {fileID: 2345595747717206099, guid: 427f91a2e463c4727b46c917cea07a9c, type: 3}
+  select: {fileID: 8300000, guid: 3641c9435ad52ea429348437c2742cdb, type: 3}
+  fly: {fileID: 8300000, guid: 65774e057815a5e4fa70215e9acad616, type: 3}
 --- !u!58 &332463852
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1702,6 +1720,21 @@ PrefabInstance:
       propertyPath: maxSpeed
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 1581748032244877801, guid: b476965ee14574a46b7dbcdd226a603e,
+        type: 3}
+      propertyPath: dead
+      value: 
+      objectReference: {fileID: 8300000, guid: f7872a240c3a867458646a6a01dde6a2, type: 3}
+    - target: {fileID: 1581748032244877801, guid: b476965ee14574a46b7dbcdd226a603e,
+        type: 3}
+      propertyPath: hurtClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 53dea70923c95cb45864ff65eeb38785, type: 3}
+    - target: {fileID: 1581748032244877801, guid: b476965ee14574a46b7dbcdd226a603e,
+        type: 3}
+      propertyPath: birdCollision
+      value: 
+      objectReference: {fileID: 8300000, guid: 32b5cb2ec3029484eb0a71e43bd697e0, type: 3}
     m_RemovedComponents:
     - {fileID: 1581748032244877807, guid: b476965ee14574a46b7dbcdd226a603e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b476965ee14574a46b7dbcdd226a603e, type: 3}
@@ -12230,6 +12263,21 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1581748032244877801, guid: b476965ee14574a46b7dbcdd226a603e,
+        type: 3}
+      propertyPath: dead
+      value: 
+      objectReference: {fileID: 8300000, guid: f7872a240c3a867458646a6a01dde6a2, type: 3}
+    - target: {fileID: 1581748032244877801, guid: b476965ee14574a46b7dbcdd226a603e,
+        type: 3}
+      propertyPath: hurtClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 53dea70923c95cb45864ff65eeb38785, type: 3}
+    - target: {fileID: 1581748032244877801, guid: b476965ee14574a46b7dbcdd226a603e,
+        type: 3}
+      propertyPath: birdCollision
+      value: 
+      objectReference: {fileID: 8300000, guid: 32b5cb2ec3029484eb0a71e43bd697e0, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b476965ee14574a46b7dbcdd226a603e, type: 3}
 --- !u!1 &1035588552
@@ -29090,12 +29138,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDis: 1.5
+  smooth: 3
   sp: {fileID: 0}
   right: {fileID: 66586256}
   rightPos: {fileID: 42714152}
   left: {fileID: 1905543341}
   leftPos: {fileID: 1241128051}
   boom: {fileID: 2345595747717206099, guid: 427f91a2e463c4727b46c917cea07a9c, type: 3}
+  select: {fileID: 8300000, guid: 3641c9435ad52ea429348437c2742cdb, type: 3}
+  fly: {fileID: 8300000, guid: 65774e057815a5e4fa70215e9acad616, type: 3}
 --- !u!58 &2035005616
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -29255,6 +29306,9 @@ MonoBehaviour:
   boom: {fileID: 2345595747717206099, guid: 427f91a2e463c4727b46c917cea07a9c, type: 3}
   score: {fileID: 7601405866189171102, guid: a76d89e4a99ca4f4bb27f786d0563ddd, type: 3}
   isPig: 1
+  hurtClip: {fileID: 8300000, guid: c1a5f2757fb06fd45812883f28dbf66b, type: 3}
+  dead: {fileID: 8300000, guid: 10ea50ad52f85f04d99128c58ee3b632, type: 3}
+  birdCollision: {fileID: 8300000, guid: 32b5cb2ec3029484eb0a71e43bd697e0, type: 3}
 --- !u!58 &2083207224
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -34476,6 +34530,21 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 696162589738500175, guid: c3e9b723057794593b75a0a26ec84714,
+        type: 3}
+      propertyPath: dead
+      value: 
+      objectReference: {fileID: 8300000, guid: f7872a240c3a867458646a6a01dde6a2, type: 3}
+    - target: {fileID: 696162589738500175, guid: c3e9b723057794593b75a0a26ec84714,
+        type: 3}
+      propertyPath: hurtClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 53dea70923c95cb45864ff65eeb38785, type: 3}
+    - target: {fileID: 696162589738500175, guid: c3e9b723057794593b75a0a26ec84714,
+        type: 3}
+      propertyPath: birdCollision
+      value: 
+      objectReference: {fileID: 8300000, guid: 32b5cb2ec3029484eb0a71e43bd697e0, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3e9b723057794593b75a0a26ec84714, type: 3}
 --- !u!1001 &1581748031887117506
@@ -34570,6 +34639,21 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1581748032244877801, guid: b476965ee14574a46b7dbcdd226a603e,
+        type: 3}
+      propertyPath: dead
+      value: 
+      objectReference: {fileID: 8300000, guid: f7872a240c3a867458646a6a01dde6a2, type: 3}
+    - target: {fileID: 1581748032244877801, guid: b476965ee14574a46b7dbcdd226a603e,
+        type: 3}
+      propertyPath: hurtClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 53dea70923c95cb45864ff65eeb38785, type: 3}
+    - target: {fileID: 1581748032244877801, guid: b476965ee14574a46b7dbcdd226a603e,
+        type: 3}
+      propertyPath: birdCollision
+      value: 
+      objectReference: {fileID: 8300000, guid: 32b5cb2ec3029484eb0a71e43bd697e0, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b476965ee14574a46b7dbcdd226a603e, type: 3}
 --- !u!1001 &1655618307375380946
@@ -34604,6 +34688,16 @@ PrefabInstance:
       propertyPath: leftPos
       value: 
       objectReference: {fileID: 1241128051}
+    - target: {fileID: 1655618307845096909, guid: e6d68d0db990a4ca08bbe8b25885f32a,
+        type: 3}
+      propertyPath: select
+      value: 
+      objectReference: {fileID: 8300000, guid: 3641c9435ad52ea429348437c2742cdb, type: 3}
+    - target: {fileID: 1655618307845096909, guid: e6d68d0db990a4ca08bbe8b25885f32a,
+        type: 3}
+      propertyPath: fly
+      value: 
+      objectReference: {fileID: 8300000, guid: 65774e057815a5e4fa70215e9acad616, type: 3}
     - target: {fileID: 1655618307845096910, guid: e6d68d0db990a4ca08bbe8b25885f32a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -34678,6 +34772,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: pig
       objectReference: {fileID: 0}
+    - target: {fileID: 3108645645787438819, guid: 4d640b3979cbb4e048525140b3d910f7,
+        type: 3}
+      propertyPath: hurtClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c1a5f2757fb06fd45812883f28dbf66b, type: 3}
+    - target: {fileID: 3108645645787438819, guid: 4d640b3979cbb4e048525140b3d910f7,
+        type: 3}
+      propertyPath: dead
+      value: 
+      objectReference: {fileID: 8300000, guid: 10ea50ad52f85f04d99128c58ee3b632, type: 3}
+    - target: {fileID: 3108645645787438819, guid: 4d640b3979cbb4e048525140b3d910f7,
+        type: 3}
+      propertyPath: birdCollision
+      value: 
+      objectReference: {fileID: 8300000, guid: 32b5cb2ec3029484eb0a71e43bd697e0, type: 3}
     - target: {fileID: 3108645645787438828, guid: 4d640b3979cbb4e048525140b3d910f7,
         type: 3}
       propertyPath: m_LocalPosition.x

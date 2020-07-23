@@ -22,6 +22,11 @@ public class bird : MonoBehaviour
     private TestMyTrial myTrial;
 
     private bool canMove = true;
+
+
+    public AudioClip select;
+    public AudioClip fly;
+
     private void Awake()
     {
 
@@ -35,6 +40,7 @@ public class bird : MonoBehaviour
     {
         if (canMove)
         {
+            AudioPlay(@select);
             isClick = true;
             rg.isKinematic = true;
         }
@@ -103,6 +109,7 @@ public class bird : MonoBehaviour
 
 
    IEnumerator  Fly() {
+       AudioPlay(fly);
         yield return new WaitForSeconds(0.1f);
         myTrial.StartTrails();
 
@@ -129,6 +136,15 @@ public class bird : MonoBehaviour
         
         GameManger._instance.NextBird();
     }
+
+
+
+    public void AudioPlay(AudioClip clip)
+    {
+        AudioSource.PlayClipAtPoint(clip, transform.position);
+    }
+
+
 
     private void OnCollisionEnter2D(Collision2D other)
     {

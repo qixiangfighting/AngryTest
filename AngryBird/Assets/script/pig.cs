@@ -13,6 +13,11 @@ public class pig : MonoBehaviour
     public GameObject score;
 
     public bool isPig = false;
+
+    public AudioClip hurtClip;
+    public AudioClip dead;
+    public AudioClip birdCollision;
+
     private void Awake()
     {
 
@@ -20,6 +25,10 @@ public class pig : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (collision.gameObject.tag == "Player")
+        {
+            AudioPlay(birdCollision);
+        }
 
         if (collision.relativeVelocity.magnitude > maxSpeed)
         {
@@ -28,6 +37,7 @@ public class pig : MonoBehaviour
         else if (collision.relativeVelocity.magnitude > minSpeed && collision.relativeVelocity.magnitude < maxSpeed)
         {
             render.sprite = hurt;
+            AudioPlay(hurtClip);
         }
         else {
 
@@ -46,5 +56,16 @@ public class pig : MonoBehaviour
 
         GameObject go = Instantiate(score, transform.position + new Vector3(0, 0.5f, 0), Quaternion.identity);
         Destroy(go, 1.5f);
+
+        AudioPlay(dead);
+    }
+
+    /**
+     * 1. 给物体加上AudioSource 组件和直接 AudioSource 静态方法使用播放的区别
+     *
+     */
+    public void AudioPlay(AudioClip clip)
+    {
+        AudioSource.PlayClipAtPoint(clip, transform.position);
     }
 }
