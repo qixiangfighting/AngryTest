@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class GameManger : MonoBehaviour
 {
     public List<bird> birds;
@@ -85,6 +85,17 @@ public class GameManger : MonoBehaviour
            starts[i].SetActive(true);
        }
    }
-   
 
+
+
+   public void Replay()
+   {
+       SceneManager.LoadScene(2);
+
+   }
+   public void Home()
+   {
+       SceneManager.LoadScene(1);
+
+   }
 }
