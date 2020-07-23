@@ -7,7 +7,8 @@ public class bird : MonoBehaviour
 {
     private bool isClick = false;
     public float maxDis = 1.5f;
-    
+    public float smooth = 3f;
+
     [HideInInspector]
     public SpringJoint2D sp;
     private Rigidbody2D rg;
@@ -75,6 +76,13 @@ public class bird : MonoBehaviour
 
             line();
         }
+
+        //相机跟随
+        float posX = transform.position.x;
+        Camera.main.transform.position = Vector3.Lerp(Camera.main.transform.position,
+            new Vector3(Mathf.Clamp(posX,0,15),Camera.main.transform.position.y, Camera.main.transform.position.z),
+            smooth * Time.deltaTime
+        );
     }
 
 
