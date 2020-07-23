@@ -11,7 +11,7 @@ public class bird : MonoBehaviour
 
     [HideInInspector]
     public SpringJoint2D sp;
-    private Rigidbody2D rg;
+    protected Rigidbody2D rg;
 
     public LineRenderer right;
     public Transform rightPos;
@@ -27,6 +27,7 @@ public class bird : MonoBehaviour
     public AudioClip select;
     public AudioClip fly;
 
+    private bool isFly = false;
     private void Awake()
     {
 
@@ -89,6 +90,17 @@ public class bird : MonoBehaviour
             new Vector3(Mathf.Clamp(posX,0,15),Camera.main.transform.position.y, Camera.main.transform.position.z),
             smooth * Time.deltaTime
         );
+
+
+
+        if (isFly)
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                showSkill();
+            }
+
+        }
     }
 
 
@@ -108,8 +120,10 @@ public class bird : MonoBehaviour
 
 
 
-   IEnumerator  Fly() {
-       AudioPlay(fly);
+   IEnumerator  Fly()
+   {
+       isFly = true;
+        AudioPlay(fly);
         yield return new WaitForSeconds(0.1f);
         myTrial.StartTrails();
 
@@ -149,7 +163,16 @@ public class bird : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other)
     {
 
+        isFly = false;
         myTrial.ClearTrails();
     }
+
+    public virtual void showSkill()
+    {
+
+        isFly = false;
+    }
+
+
 }
 

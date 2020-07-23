@@ -1181,10 +1181,10 @@ GameObject:
   - component: {fileID: 332463854}
   - component: {fileID: 332463853}
   - component: {fileID: 332463852}
-  - component: {fileID: 332463851}
   - component: {fileID: 332463850}
+  - component: {fileID: 332463851}
   m_Layer: 0
-  m_Name: bird (2)
+  m_Name: yellowBird
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1213,7 +1213,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 332463849}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d15d4cbdfa29045babc9c556f87f456f, type: 3}
+  m_Script: {fileID: 11500000, guid: c1192733a03a04e5089e7a9bf2ad107d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxDis: 1.5
@@ -1241,7 +1241,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.24
 --- !u!231 &332463853
 SpringJoint2D:
   m_ObjectHideFlags: 0
@@ -1320,7 +1320,7 @@ SpriteRenderer:
   m_SortingLayerID: -749310605
   m_SortingLayer: 1
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300318, guid: 89db81eb094824f25ba2c8d413182361, type: 3}
+  m_Sprite: {fileID: 21300336, guid: 89db81eb094824f25ba2c8d413182361, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

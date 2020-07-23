@@ -73,6 +73,7 @@
     <Compile Include="Assets\script\pig.cs" />
     <Compile Include="Assets\script\TestMyTrial.cs" />
     <Compile Include="Assets\script\win.cs" />
+    <Compile Include="Assets\script\YellowBird.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/hwj/Desktop/unityTest/gitUnity/AngryBirdTest/AngryBird/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
