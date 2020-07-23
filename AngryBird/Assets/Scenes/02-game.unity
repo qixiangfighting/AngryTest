@@ -12606,7 +12606,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 332de1e6db4a147878241b95f0965aab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 0}
+  button: {fileID: 1466505674}
 --- !u!114 &1236458360 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3108645645787438819, guid: 4d640b3979cbb4e048525140b3d910f7,
@@ -17883,7 +17883,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 100, y: -100}
-  m_SizeDelta: {x: 150, y: 150}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1466505676
 MonoBehaviour:
@@ -28950,7 +28950,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1906808308}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1151414599}
+        m_MethodName: Retry
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2022544641
 GameObject:
   m_ObjectHideFlags: 0

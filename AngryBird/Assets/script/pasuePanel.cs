@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class pasuePanel : MonoBehaviour
 {
@@ -11,8 +12,7 @@ public class pasuePanel : MonoBehaviour
 
     private void Awake()
     {
-
-        anim =   GetComponent<Animator>();
+        anim = GetComponent<Animator>();
     }
 
     /**
@@ -36,7 +36,17 @@ public class pasuePanel : MonoBehaviour
 
     public void Home()
     {
+        Time.timeScale = 1;
         Debug.Log("------call Home-----------");
+        SceneManager.LoadScene(1);
+    }
+
+
+    public void Retry()
+    {
+        Time.timeScale = 1;
+        Debug.Log("------call Retry-----------");
+        SceneManager.LoadScene(2);
     }
 
     // 点击了继续按钮
@@ -45,7 +55,6 @@ public class pasuePanel : MonoBehaviour
         Debug.Log("------call Resume-----------");
         Time.timeScale = 1;
         anim.SetBool("isPause", false);
-
     }
 
     /**
@@ -56,6 +65,7 @@ public class pasuePanel : MonoBehaviour
     {
         Time.timeScale = 0;
     }
+
     /**
      *  resuem动画播放完调用
      *
