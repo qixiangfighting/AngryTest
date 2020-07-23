@@ -155,12 +155,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDis: 1.5
+  smooth: 3
   sp: {fileID: 0}
   right: {fileID: 0}
   rightPos: {fileID: 0}
   left: {fileID: 0}
   leftPos: {fileID: 0}
   boom: {fileID: 2345595747717206099, guid: 427f91a2e463c4727b46c917cea07a9c, type: 3}
+  select: {fileID: 8300000, guid: 3641c9435ad52ea429348437c2742cdb, type: 3}
+  fly: {fileID: 8300000, guid: 65774e057815a5e4fa70215e9acad616, type: 3}
+  hurt: {fileID: 21300132, guid: 89db81eb094824f25ba2c8d413182361, type: 3}
 --- !u!114 &1655618307845096947
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -69,6 +69,7 @@
     <Compile Include="Assets\script\bird.cs" />
     <Compile Include="Assets\script\Boom.cs" />
     <Compile Include="Assets\script\GameManger.cs" />
+    <Compile Include="Assets\script\GreenBirds.cs" />
     <Compile Include="Assets\script\pasuePanel.cs" />
     <Compile Include="Assets\script\pig.cs" />
     <Compile Include="Assets\script\TestMyTrial.cs" />

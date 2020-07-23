@@ -28,13 +28,16 @@ public class bird : MonoBehaviour
     public AudioClip fly;
 
     private bool isFly = false;
+
+    public Sprite hurt;
+    private SpriteRenderer render;
     private void Awake()
     {
 
          sp = GetComponent<SpringJoint2D>();
          rg = GetComponent<Rigidbody2D>();
          myTrial = GetComponent<TestMyTrial>();
-
+         render = GetComponent<SpriteRenderer>();
     }
     // 鼠标按下
     private void OnMouseDown()
@@ -122,7 +125,7 @@ public class bird : MonoBehaviour
 
    IEnumerator  Fly()
    {
-       isFly = true;
+        isFly = true;
         AudioPlay(fly);
         yield return new WaitForSeconds(0.1f);
         myTrial.StartTrails();
@@ -165,14 +168,18 @@ public class bird : MonoBehaviour
 
         isFly = false;
         myTrial.ClearTrails();
+        Hurt();
     }
 
     public virtual void showSkill()
     {
-
         isFly = false;
     }
 
+    public void Hurt()
+    {
+        render.sprite = hurt;
+    }
 
 }
 
