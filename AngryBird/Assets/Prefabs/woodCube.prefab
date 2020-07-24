@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 696162589738500175}
   m_Layer: 0
   m_Name: woodCube
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -192,3 +192,6 @@ MonoBehaviour:
   boom: {fileID: 2345595747717206099, guid: 427f91a2e463c4727b46c917cea07a9c, type: 3}
   score: {fileID: 4543574334486525897, guid: ee21591b180694ab68c0bc69f92f5c2f, type: 3}
   isPig: 0
+  hurtClip: {fileID: 0}
+  dead: {fileID: 0}
+  birdCollision: {fileID: 0}

@@ -30,7 +30,7 @@ public class bird : MonoBehaviour
     private bool isFly = false;
 
     public Sprite hurt;
-    private SpriteRenderer render;
+    protected SpriteRenderer render;
     private void Awake()
     {
 
@@ -145,7 +145,7 @@ public class bird : MonoBehaviour
 
 
     // 下一只小鸟飞出
-    void Next()
+   protected virtual void Next()
     {
         GameManger._instance.birds.Remove(this);
         Destroy(gameObject);
@@ -168,7 +168,7 @@ public class bird : MonoBehaviour
 
         isFly = false;
         myTrial.ClearTrails();
-        Hurt();
+        // Hurt();
     }
 
     public virtual void showSkill()
