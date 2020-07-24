@@ -14,6 +14,9 @@ public class GameManger : MonoBehaviour
     public GameObject lose;
     private Vector3 orignalPos;
     public GameObject[] starts;
+
+    private int startNum = 0;
+
     private void Awake()
     {
         _instance = this;
@@ -79,29 +82,36 @@ public class GameManger : MonoBehaviour
 
    IEnumerator show()
    {
-       for (int i = 0; i < birds.Count+1; i++)
+       for (; startNum < birds.Count+1; startNum++)
        {
-           if (i>=starts.Length)
+           if (startNum>=starts.Length)
            {
 
                break;
            }
 
            yield return new WaitForSeconds(0.2f);
-           starts[i].SetActive(true);
+           starts[startNum].SetActive(true);
        }
+       print("--startNum--:"+startNum);
    }
 
 
 
    public void Replay()
    {
+       SaveData();
        SceneManager.LoadScene(2);
 
    }
    public void Home()
    {
+       SaveData();
        SceneManager.LoadScene(1);
+   }
 
+   public void SaveData()
+   {
+       PlayerPrefs.SetInt(PlayerPrefs.GetString("nowLevel"),startNum);
    }
 }
