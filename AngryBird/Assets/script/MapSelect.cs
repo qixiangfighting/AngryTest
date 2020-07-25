@@ -20,6 +20,7 @@ public class MapSelect : MonoBehaviour
     public int endNum = 3;
     private void Start()
     {
+        // PlayerPrefs.DeleteAll(); 清除数据
         if (PlayerPrefs.GetInt("totalNum", 0) >= starsNum)
         {
             isSelect = true;

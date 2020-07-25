@@ -73,6 +73,7 @@
     <Compile Include="Assets\script\GreenBirds.cs" />
     <Compile Include="Assets\script\LevelSelect.cs" />
     <Compile Include="Assets\script\LoadLevel.cs" />
+    <Compile Include="Assets\script\LoadLevelAsync.cs" />
     <Compile Include="Assets\script\MapSelect.cs" />
     <Compile Include="Assets\script\pasuePanel.cs" />
     <Compile Include="Assets\script\pig.cs" />
