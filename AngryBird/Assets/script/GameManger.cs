@@ -125,7 +125,7 @@ public class GameManger : MonoBehaviour
        for (int i = 1; i < totalNum; i++)
        {
            //
-           sum += PlayerPrefs.GetInt(PlayerPrefs.GetString("level"+i.ToString()));
+           sum += PlayerPrefs.GetInt("level"+i.ToString());
        }
 
        PlayerPrefs.SetInt("totalNum", sum);
