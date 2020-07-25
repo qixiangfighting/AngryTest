@@ -12,6 +12,7 @@ public class LevelSelect : MonoBehaviour
 
     private Image image;
 
+    public GameObject[] stars;
     private void Awake()
     {
         image = GetComponent<Image>();
@@ -28,6 +29,16 @@ public class LevelSelect : MonoBehaviour
         {
             image.overrideSprite = levelBG;
             transform.Find("num").gameObject.SetActive(true);
+        }
+
+        int count = PlayerPrefs.GetInt("level" + gameObject.name);
+
+        if (count > 0)
+        {
+            for (int i = 0; i < count; i++)
+            {
+                stars[i].SetActive(true);
+            }
         }
 
     }

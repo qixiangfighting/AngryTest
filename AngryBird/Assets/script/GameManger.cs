@@ -112,6 +112,11 @@ public class GameManger : MonoBehaviour
 
    public void SaveData()
    {
-       PlayerPrefs.SetInt(PlayerPrefs.GetString("nowLevel"),startNum);
+
+       if (startNum > PlayerPrefs.GetInt(PlayerPrefs.GetString("nowLevel")))
+       {
+           PlayerPrefs.SetInt(PlayerPrefs.GetString("nowLevel"),startNum);
+       }
+
    }
 }

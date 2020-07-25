@@ -169,6 +169,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSelect: 0
   levelBG: {fileID: 21300046, guid: e9c583dcac19d43f4b1d924caac2b03c, type: 3}
+  stars:
+  - {fileID: 851880593}
+  - {fileID: 1340559921}
+  - {fileID: 2018223935}
 --- !u!114 &9706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1302,6 +1306,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSelect: 0
   levelBG: {fileID: 21300048, guid: e9c583dcac19d43f4b1d924caac2b03c, type: 3}
+  stars:
+  - {fileID: 1534259660}
+  - {fileID: 1542609482}
+  - {fileID: 220824288}
 --- !u!114 &124336990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3955,6 +3963,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSelect: 0
   levelBG: {fileID: 21300048, guid: e9c583dcac19d43f4b1d924caac2b03c, type: 3}
+  stars:
+  - {fileID: 382000407}
+  - {fileID: 285565301}
+  - {fileID: 1567142994}
 --- !u!114 &426890882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4087,6 +4099,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSelect: 0
   levelBG: {fileID: 21300046, guid: e9c583dcac19d43f4b1d924caac2b03c, type: 3}
+  stars:
+  - {fileID: 1121462125}
+  - {fileID: 965410305}
+  - {fileID: 715243894}
 --- !u!114 &454667431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4714,6 +4730,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSelect: 0
   levelBG: {fileID: 21300046, guid: e9c583dcac19d43f4b1d924caac2b03c, type: 3}
+  stars:
+  - {fileID: 761400093}
+  - {fileID: 1472938225}
+  - {fileID: 78838073}
 --- !u!114 &506205958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5730,6 +5750,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSelect: 0
   levelBG: {fileID: 21300012, guid: 2bd989806138245cca6cb7eda625aaf1, type: 3}
+  stars:
+  - {fileID: 1944011075}
+  - {fileID: 2092030498}
+  - {fileID: 1345945887}
 --- !u!1 &617463585
 GameObject:
   m_ObjectHideFlags: 0
@@ -5904,6 +5928,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSelect: 0
   levelBG: {fileID: 21300048, guid: e9c583dcac19d43f4b1d924caac2b03c, type: 3}
+  stars:
+  - {fileID: 1224617973}
+  - {fileID: 1908249929}
+  - {fileID: 1208741911}
 --- !u!114 &620102165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7327,6 +7355,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSelect: 0
   levelBG: {fileID: 21300012, guid: 2bd989806138245cca6cb7eda625aaf1, type: 3}
+  stars:
+  - {fileID: 2066665106}
+  - {fileID: 765122243}
+  - {fileID: 1223362983}
 --- !u!1 &827015152
 GameObject:
   m_ObjectHideFlags: 0
@@ -8543,6 +8575,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSelect: 0
   levelBG: {fileID: 21300012, guid: 2bd989806138245cca6cb7eda625aaf1, type: 3}
+  stars:
+  - {fileID: 2128563961}
+  - {fileID: 255359277}
+  - {fileID: 1908709218}
 --- !u!1 &903551955
 GameObject:
   m_ObjectHideFlags: 0
@@ -10882,6 +10918,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSelect: 0
   levelBG: {fileID: 21300012, guid: 2bd989806138245cca6cb7eda625aaf1, type: 3}
+  stars:
+  - {fileID: 457824838}
+  - {fileID: 1236916006}
+  - {fileID: 1242492637}
 --- !u!1 &1208686443
 GameObject:
   m_ObjectHideFlags: 0
@@ -11845,6 +11885,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSelect: 0
   levelBG: {fileID: 21300012, guid: 2bd989806138245cca6cb7eda625aaf1, type: 3}
+  stars:
+  - {fileID: 1116842737}
+  - {fileID: 2112176206}
+  - {fileID: 153391082}
 --- !u!1 &1247653525
 GameObject:
   m_ObjectHideFlags: 0
@@ -12573,6 +12617,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSelect: 0
   levelBG: {fileID: 21300046, guid: e9c583dcac19d43f4b1d924caac2b03c, type: 3}
+  stars:
+  - {fileID: 1461193879}
+  - {fileID: 1317276738}
+  - {fileID: 492092271}
 --- !u!114 &1300832252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14567,6 +14615,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSelect: 0
   levelBG: {fileID: 21300048, guid: e9c583dcac19d43f4b1d924caac2b03c, type: 3}
+  stars:
+  - {fileID: 1230463546}
+  - {fileID: 1637515374}
+  - {fileID: 2112559367}
 --- !u!114 &1481881686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15320,6 +15372,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSelect: 0
   levelBG: {fileID: 21300012, guid: 2bd989806138245cca6cb7eda625aaf1, type: 3}
+  stars:
+  - {fileID: 1499326236}
+  - {fileID: 119622540}
+  - {fileID: 1629262616}
 --- !u!1 &1556200875
 GameObject:
   m_ObjectHideFlags: 0
@@ -17301,6 +17357,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSelect: 0
   levelBG: {fileID: 21300048, guid: e9c583dcac19d43f4b1d924caac2b03c, type: 3}
+  stars:
+  - {fileID: 1030022539}
+  - {fileID: 1763651449}
+  - {fileID: 1678328856}
 --- !u!114 &1885659044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17629,6 +17689,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSelect: 0
   levelBG: {fileID: 21300046, guid: e9c583dcac19d43f4b1d924caac2b03c, type: 3}
+  stars:
+  - {fileID: 827015152}
+  - {fileID: 660028005}
+  - {fileID: 1697939774}
 --- !u!114 &1895729180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17977,6 +18041,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSelect: 0
   levelBG: {fileID: 21300048, guid: e9c583dcac19d43f4b1d924caac2b03c, type: 3}
+  stars:
+  - {fileID: 260647613}
+  - {fileID: 984760987}
+  - {fileID: 703551860}
 --- !u!114 &1915695255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18794,6 +18862,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSelect: 0
   levelBG: {fileID: 21300046, guid: e9c583dcac19d43f4b1d924caac2b03c, type: 3}
+  stars:
+  - {fileID: 1902162723}
+  - {fileID: 1373870013}
+  - {fileID: 181260941}
 --- !u!114 &2067246839
 MonoBehaviour:
   m_ObjectHideFlags: 0
