@@ -24,6 +24,15 @@ public class LevelSelect : MonoBehaviour
         {
             isSelect = true;
         }
+        else
+        {
+            // 判断当前光卡是否可以选择
+           int beforeNum =  int.Parse(gameObject.name) - 1;//查看前一个光卡星星数
+           if (PlayerPrefs.GetInt("level"+beforeNum.ToString())>0)
+           {
+               isSelect = true;
+           }
+        }
 
         if (isSelect)
         {
